@@ -14,21 +14,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        path: `${__dirname}/src`,
       },
     },
     'gatsby-plugin-styled-components',
@@ -38,12 +24,30 @@ module.exports = {
         baseUrl: process.env.GATSBY_API_BASE_URL,
         protocol: 'https',
         hostingWPCOM: false,
-        useACF: false,
+        useACF: true,
         auth: {
           jwt_user: process.env.GATSBY_JWT_USER,
           jwt_pass: process.env.GATSBY_JWT_PASSWORD,
         },
+        excludedRoutes: [
+          '**/pages',
+          '**/types',
+          '**/users',
+        ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'KhanhJs',
+        short_name: 'KhanhJs',
+        start_url: '/',
+        background_color: 'green',
+        theme_color: 'green',
+        display: 'standalone',
+        icon: 'src/images/react.webp',
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 }
