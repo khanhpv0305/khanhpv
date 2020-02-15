@@ -3,7 +3,7 @@ const path = require('path')
 exports.createPages = async ({graphql, actions}) => {
   const result = await graphql(`
     query {
-      allWordpressPost {
+      allWordpressWpArticle {
         edges {
           node {
             slug
@@ -15,7 +15,7 @@ exports.createPages = async ({graphql, actions}) => {
 
   const {createPage} = actions
 
-  result.data.allWordpressPost.edges.forEach(
+  result.data.allWordpressWpArticle.edges.forEach(
     ({node}) => {
       createPage({
         path: `/${node.slug}/`,
