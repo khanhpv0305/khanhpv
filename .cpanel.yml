@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/khietbon/test-git.khietbong.com/
-    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -a public/. $DEPLOYPATH
