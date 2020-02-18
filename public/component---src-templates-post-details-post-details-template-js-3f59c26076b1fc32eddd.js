@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{ER63:function(t,n,e){"use strict";e.r(n);var i=e("q1tI"),a=e.n(i),o=e("vOnD").a.div.withConfig({displayName:"PostDetailsstyled__PostDetails",componentId:"lr54n0-0"})([""]);n.default=function(){return a.a.createElement(o,null,"trang chi tiet blog")}}}]);
+//# sourceMappingURL=component---src-templates-post-details-post-details-template-js-3f59c26076b1fc32eddd.js.map

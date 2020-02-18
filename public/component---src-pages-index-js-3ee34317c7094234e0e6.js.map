@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["HomePage"],"mappings":"2FAAA,uBAGeA,YAAf","file":"component---src-pages-index-js-3ee34317c7094234e0e6.js","sourcesContent":["// Components\nimport {HomePage} from '../pagesContent'\n\nexport default HomePage"],"sourceRoot":""}
